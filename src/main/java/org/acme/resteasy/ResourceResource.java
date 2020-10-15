@@ -20,7 +20,7 @@ public class ResourceResource {
     @Produces(MediaType.TEXT_PLAIN)
     public String helloFile() throws IOException {
         log.info("/file");
-        InputStream resourceAsStream = ResourceResource.class.getResourceAsStream("/myfile.properties");
+        InputStream resourceAsStream = ResourceResource.class.getResourceAsStream("/META-INF/resources/myfile.properties");
         return IOUtils.toString(resourceAsStream, StandardCharsets.UTF_8);
     }
 
