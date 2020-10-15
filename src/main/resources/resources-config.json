@@ -1,7 +1,7 @@
 {
   "resources": [
     {
-      "pattern": "myfile\\.*properties$"
+      "pattern": ".*/.*/.*\\.yml$"
     }
   ]
 }
